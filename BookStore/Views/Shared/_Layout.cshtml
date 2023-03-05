@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -22,8 +22,12 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Book", "Index", "Books")</li>
+                    <li>@Html.ActionLink("Subject", "Index", "Subjects")</li>
+                    <li>@Html.ActionLink("Author", "Index", "Authors")</li>
+                    <li>@Html.ActionLink("BookWriting", "Index", "BookWritings")</li>
+                    <li>@Html.ActionLink("DetailsOrder", "Index", "DetailsOrders")</li>
+                    <li>@Html.ActionLink("Publisher", "Index", "Publishers")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
